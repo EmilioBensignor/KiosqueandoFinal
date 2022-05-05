@@ -1,0 +1,56 @@
+.formularioContacto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.formulario{
+    background-color: $color4;
+    width: 80%;
+    margin: $margingral;
+    padding: $paddinggral*2;
+    border: $color1 solid 4px;
+    border-radius: $borderadio;
+}
+.btnForm{
+    border: $color2 solid 2px;
+}
+.boton{
+    padding: $paddinggral;
+    width: 8.5%;
+    margin-left: $margingral;
+}
+.divPadrefinal{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.divFinal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color4;
+    width: 80%;
+    height: 10vw;
+    margin: $margingral*2;
+    font-weight: bolder;
+    border: $borde1;
+    border-radius: $borderadio;
+}
+
+@media only screen and (max-width: 450px){
+    .formulario{
+        font-size: small;
+    }
+    .form-control{
+        font-size: x-small;
+    }
+    .form-select{
+        font-size: x-small;
+    }
+    .input-group-text{
+        font-size: x-small;
+    }
+    .btnForm{
+        font-size: small;
+    }
+}

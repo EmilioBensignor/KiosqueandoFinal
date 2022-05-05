@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/archivo.css">
+    <title>Kiosqueando</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Palette+Mosaic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Menú de Navegación y Logo -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../resource/logo.png" class="d-inline-block align-text-top logo">
+                    <p class="navP">Kiosqueando</p>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="ranking.html">Ranking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="compras.html">Compras</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Novedades
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="novedades.html">Gomitas</a></li>
+                                <li><a class="dropdown-item" href="novedades.html">Chupetines</a></li>
+                                <li><a class="dropdown-item" href="novedades.html">Chocolates</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Compras -->
+        <div class="divTitulo">
+            <div class="divH1">
+                <h1>Compras</h1>
+            </div>
+        </div>
+        <div class="listaCompras">
+            <!-- Compra 1 -->
+            <div class="cartaCompra">
+                <h3 class="tituloCarta">Pico Dulce</h3>
+                <div class="divFoto">
+                <img src="../resource/picodulce.png" class="fotoCompra">
+                </div>
+                <div class="descripcionCompra">
+                    <p>Un chupetín clásico. Un mix de sabores ideal para el paladar. Para recreos, salidas
+                        del colegio o para solo disfrutar. Su sabor excepcional lo hace único. El pico dulce es la golosina
+                        perfecta que tenes que comprar</p>
+                </div>
+                <div class="precioCantidadAñadir">
+                    <h4>Precio: $25</h4>
+                    <div class="precio">
+                        <select class="form-select cantidadGolosina" aria-label="Default select example">
+                            <option selected>Cant.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-danger btn-sm añadirCarrito">Añadir a carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Compra 2 -->
+            <div class="cartaCompra">
+                <h3 class="tituloCarta">Lenguetazo</h3>
+                <div class="divFoto">
+                <img src="../resource/lenguetazo.png" class="fotoCompra">
+                </div>
+                <div class="descripcionCompra">
+                    <p>Caramelo masticable con ¡forma de lengua! Es el caramelo divertido que necesitas en esos momentos de
+                        tristeza. Sabor original de tutti frutti, pero con muchas otras variantes. Pero ojo,
+                        podrían hasta pintarte la lenga</p>
+                </div>
+                <div class="precioCantidadAñadir">
+                    <h4>Precio: $30</h4>
+                    <div class="precio">
+                        <select class="form-select cantidadGolosina" aria-label="Default select example">
+                            <option selected>Cant.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-danger btn-sm añadirCarrito">Añadir a carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Compra 3 -->
+            <div class="cartaCompra">
+                <h3 class="tituloCarta">Bazooka</h3>
+                <div class="divFoto">
+                <img src="../resource/bazooka.png" class="fotoCompra">
+                </div>
+                <div class="descripcionCompra">
+                    <p>El mejor chicle para hacer globo que vas a encontrar. Sabor encandilante y la textura perfecta para poder disfrutar del chicle no solo por su sabor</p>
+                </div>
+                <div class="precioCantidadAñadir">
+                    <h4>Precio: $5</h4>
+                    <div class="precio">
+                        <select class="form-select cantidadGolosina" aria-label="Default select example">
+                            <option selected>Cant.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-danger btn-sm añadirCarrito">Añadir a carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Compra 4 -->
+            <div class="cartaCompra">
+                <h3 class="tituloCarta">Bananita Dolca</h3>
+                <div class="divFoto">
+                <img src="../resource/bananita dolca.png" class="fotoCompra">
+                </div>
+                <div class="descripcionCompra">
+                    <p>¡Llegó la Bananita Dolca! La combinación de chocolate y banana en un balance perfecto. Sabor, amor y recuerdos es lo que te podes encontrar cuando compres una Bananita Dolca</p>
+                </div>
+                <div class="precioCantidadAñadir">
+                    <h4>Precio: $40</h4>
+                    <div class="precio">
+                        <select class="form-select cantidadGolosina" aria-label="Default select example">
+                            <option selected>Cant.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-danger btn-sm añadirCarrito">Añadir a carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Compra 5 -->
+            <div class="cartaCompra">
+                <h3 class="tituloCarta">Sapito</h3>
+                <div class="divFoto">
+                <img src="../resource/sapito.png" class="fotoCompra">
+                </div>
+                <div class="descripcionCompra">
+                    <p>El sapito el chocolate más divertido de todos. Muchos sabores para elegir, pero recomendamos el de Dulce de Leche, no va a fallar ¡nunca! Chocolate por fuera y por dentro el sabor que quieras elegir. ¿Quién no se acuerda la clásica canción del Sapito?</p>
+                </div>
+                <div class="precioCantidadAñadir">
+                    <h4>Precio: $20</h4>
+                    <div class="precio">
+                        <select class="form-select cantidadGolosina" aria-label="Default select example">
+                            <option selected>Cant.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-danger btn-sm añadirCarrito">Añadir a carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Compra 6 -->
+            <div class="cartaCompra">
+                <h3 class="tituloCarta">Bull Dog</h3>
+                <div class="divFoto">
+                <img src="../resource/bulldog.png" class="fotoCompra">
+                </div>
+                <div class="descripcionCompra">
+                    <p>La golosina distinta, es el Bull Dog. Múltiples sabores para elegir, todos los que te puedas imaginar. Acá tenemos todos los que quieras, si compras uno YA te podes llevar otro a ¡mitad de precio!</p>
+                </div>
+                <div class="precioCantidadAñadir">
+                    <h4>Precio: $35</h4>
+                    <div class="precio">
+                        <select class="form-select cantidadGolosina" aria-label="Default select example">
+                            <option selected>Cant.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-danger btn-sm añadirCarrito">Añadir a carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Compra 7 -->
+            <div class="cartaCompra">
+                <h3 class="tituloCarta">Pico Dulce</h3>
+                <div class="divFoto">
+                <img src="../resource/picodulce.png" class="fotoCompra">
+                </div>
+                <div class="descripcionCompra">
+                    <p>Un chupetín clásico. Un mix de sabores ideal para el paladar. Para recreos, salidas
+                        del colegio o para solo disfrutar. Su sabor excepcional lo hace único. El pico dulce es la golosina
+                        perfecta que tenes que comprar</p>
+                </div>
+                <div class="precioCantidadAñadir">
+                    <h4>Precio: $25</h4>
+                    <div class="precio">
+                        <select class="form-select cantidadGolosina" aria-label="Default select example">
+                            <option selected>Cant.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-danger btn-sm añadirCarrito">Añadir a carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Compra 8 -->
+            <div class="cartaCompra">
+                <h3 class="tituloCarta">Lenguetazo</h3>
+                <div class="divFoto">
+                <img src="../resource/lenguetazo.png" class="fotoCompra">
+                </div>
+                <div class="descripcionCompra">
+                    <p>Caramelo masticable con ¡forma de lengua! Es el caramelo divertido que necesitas en esos momentos de
+                        tristeza. Sabor original de tutti frutti, pero con muchas otras variantes. Pero ojo,
+                        podrían hasta pintarte la lenga</p>
+                </div>
+                <div class="precioCantidadAñadir">
+                    <h4>Precio: $30</h4>
+                    <div class="precio">
+                        <select class="form-select cantidadGolosina" aria-label="Default select example">
+                            <option selected>Cant.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-danger btn-sm añadirCarrito">Añadir a carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Compra 9 -->
+            <div class="cartaCompra">
+                <h3 class="tituloCarta">Bazooka</h3>
+                <div class="divFoto">
+                <img src="../resource/bazooka.png" class="fotoCompra">
+                </div>
+                <div class="descripcionCompra">
+                    <p>El mejor chicle para hacer globo que vas a encontrar. Sabor encandilante y la textura perfecta para poder disfrutar del chicle no solo por su sabor</p>
+                </div>
+                <div class="precioCantidadAñadir">
+                    <h4>Precio: $5</h4>
+                    <div class="precio">
+                        <select class="form-select cantidadGolosina" aria-label="Default select example">
+                            <option selected>Cant.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-danger btn-sm añadirCarrito">Añadir a carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Compra 10 -->
+            <div class="cartaCompra">
+                <h3 class="tituloCarta">Bananita Dolca</h3>
+                <div class="divFoto">
+                <img src="../resource/bananita dolca.png" class="fotoCompra">
+                </div>
+                <div class="descripcionCompra">
+                    <p>¡Llegó la Bananita Dolca! La combinación de chocolate y banana en un balance perfecto. Sabor, amor y recuerdos es lo que te podes encontrar cuando compres una Bananita Dolca</p>
+                </div>
+                <div class="precioCantidadAñadir">
+                    <h4>Precio: $40</h4>
+                    <div class="precio">
+                        <select class="form-select cantidadGolosina" aria-label="Default select example">
+                            <option selected>Cant.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-danger btn-sm añadirCarrito">Añadir a carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Compra 11 -->
+            <div class="cartaCompra">
+                <h3 class="tituloCarta">Sapito</h3>
+                <div class="divFoto">
+                <img src="../resource/sapito.png" class="fotoCompra">
+                </div>
+                <div class="descripcionCompra">
+                    <p>El sapito el chocolate más divertido de todos. Muchos sabores para elegir, pero recomendamos el de Dulce de Leche, no va a fallar ¡nunca! Chocolate por fuera y por dentro el sabor que quieras elegir. ¿Quién no se acuerda la clásica canción del Sapito?</p>
+                </div>
+                <div class="precioCantidadAñadir">
+                    <h4>Precio: $20</h4>
+                    <div class="precio">
+                        <select class="form-select cantidadGolosina" aria-label="Default select example">
+                            <option selected>Cant.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-danger btn-sm añadirCarrito">Añadir a carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Compra 12 -->
+            <div class="cartaCompra">
+                <h3 class="tituloCarta">Bull Dog</h3>
+                <div class="divFoto">
+                <img src="../resource/bulldog.png" class="fotoCompra">
+                </div>
+                <div class="descripcionCompra">
+                    <p>La golosina distinta, es el Bull Dog. Múltiples sabores para elegir, todos los que te puedas imaginar. Acá tenemos todos los que quieras, si compras uno YA te podes llevar otro a ¡mitad de precio!</p>
+                </div>
+                <div class="precioCantidadAñadir">
+                    <h4>Precio: $35</h4>
+                    <div class="precio">
+                        <select class="form-select cantidadGolosina" aria-label="Default select example">
+                            <option selected>Cant.</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <button type="button" class="btn btn-danger btn-sm añadirCarrito">Añadir a carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Aside -->
+    <div class="itemAside">
+        <img class="fender" src="../resource/fender.png">
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            <p>Kiosqueando industries&copy; Todos los derechos reservados.</p>
+        </div>
+        <div class="redesSociales">
+            <a href="https://www.facebook.com/" class="fa fa-facebook" target='_blank'></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter" target='_blank'></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube" target='_blank'></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" target='_blank'></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

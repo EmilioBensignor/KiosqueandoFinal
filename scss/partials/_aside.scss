@@ -1,0 +1,43 @@
+.aside{
+    display: flex;
+    justify-content: center;
+    margin: $margingral*2;
+}
+.imgAside{
+    width: 60%;
+    height: 2%;
+    border: $borde2;
+    border-radius: $borderadio;
+}
+.fifa{
+    width: 60%;
+    height: 3%;
+    border: $borde2;
+    border-radius: $borderadio;
+}
+.itemAside{
+    display: flex;
+    justify-content: center;
+}
+.fender{
+    width: 50%;
+    height: 20%;
+    margin: $margingral*2;
+    border: $color1 solid 7px;
+    border-radius: $borderadio*2;
+}
+.netflix{
+    width: 50%;
+    margin: $margingral/2;
+    border: $color1 solid 5px;
+    border-radius: $borderadio;
+}
+
+@media only screen and (max-width: 682px){
+    .fender{
+        border: $color1 solid 4px;
+    }
+    .netflix{
+        border: $color1 solid 4px;
+    }
+}

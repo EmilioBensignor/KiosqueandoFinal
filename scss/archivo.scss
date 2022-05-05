@@ -1,0 +1,20 @@
+@import "./variables/variables";
+@import "./partials/nav";
+@import "./partials/h1";
+@import "./partials/index";
+@import "./partials/aside";
+@import "./partials/footer";
+@import "./partials/ranking";
+@import "./partials/compras";
+@import "./partials/novedades";
+@import "./partials/contacto";
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body{
+    background-image: url(../Resource/fondogolosinas.jpg);
+    background-size: contain;
+}

@@ -1,0 +1,107 @@
+.listaCompras{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cartaCompra{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color3;
+    width: 25%;
+    margin: $margingral;
+    overflow: hidden;
+    border: $borde1;
+    border-radius: $borderadio;
+}
+.tituloCarta{
+    margin: $margingral;
+}
+.divFoto{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.fotoCompra{
+    margin: $margingral;
+    height: 10vw;
+}
+.descripcionCompra{
+    background-color: $color4;
+    width: 90%;
+    margin: $margingral;
+    padding: $paddinggral;
+    border: $borde1;
+    border-radius: $borderadio;
+}
+.precio{
+    display: flex;
+    justify-content: center;
+    align-content: bottom;
+}
+.precioCantidadAñadir{
+    text-align: center;
+    background-color: $color4;
+    width: 90%;
+    margin: $margingral;
+    padding: $paddinggral*2;
+    border: $borde1;
+    border-radius: $borderadio;
+}
+.añadirCarrito{
+    margin: 0% 1% 0% 1%;
+    font-size: 1vw;
+}
+.cantidadGolosina{
+    width: 40%;
+    font-size: 1vw;
+}
+
+@media only screen and (max-width: 900px){
+    .cartaCompra{
+        width: 40%;
+    }
+    .cantidadGolosina{
+        font-size: 1.5vw;
+    }
+    .añadirCarrito{
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 682px){
+    .descripcionCompra{
+        border: $color1 solid 2px;
+    }
+    .precioCantidadAñadir{
+        border: $color1 solid 2px;
+    }
+    .fotoCompra{
+        height: 15vw;
+    }
+}
+
+@media only screen and (max-width: 545px){
+    .cartaCompra{
+        width: 80%;
+    }
+    .fotoCompra{
+        height: 30vw;
+    }
+    .cantidadGolosina{
+        font-size: 2.5vw;
+    }
+    .añadirCarrito{
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .cantidadGolosina{
+        font-size: 3vw;
+    }
+    .añadirCarrito{
+        font-size: 3vw;
+    }
+}

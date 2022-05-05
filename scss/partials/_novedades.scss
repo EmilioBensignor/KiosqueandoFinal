@@ -1,0 +1,279 @@
+.divNovedades{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "nov1 nov2"
+    "nov3 nov4"
+    ;
+    justify-items: center;
+    margin: $margingral;
+}
+.itemNov1{
+    grid-area: nov1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color4;
+    opacity: 0.93;
+    width: 70%;
+    height: 85%;
+    padding: $paddinggral;
+    border: $color2 solid 5px;
+    border-radius: $borderadio*2;
+}
+.itemNov2{
+    grid-area: nov2;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color4;
+    opacity: 0.93;
+    width: 70%;
+    height: 85%;
+    padding: $paddinggral;
+    border: $color2 solid 5px;
+    border-radius: $borderadio*2;
+}
+.itemNov3{
+    grid-area: nov3;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color4;
+    opacity: 0.93;
+    width: 70%;
+    height: 85%;
+    padding: $paddinggral;
+    border: $color2 solid 5px;
+    border-radius: $borderadio*2;
+}
+.itemNov4{
+    grid-area: nov4;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color4;
+    opacity: 0.93;
+    width: 70%;
+    height: 85%;
+    padding: $paddinggral;
+    border: $color2 solid 5px;
+    border-radius: $borderadio*2;
+}
+.h2Nov{
+    font-family: $fuente;
+    font: bold;
+    font-size: 2vw;
+}
+.h3Nov{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline wavy;
+    font-family: $fuente;
+    font-size: 1.5vw;
+    margin: 15px;
+}
+.imgNov{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 30%;
+    animation-name: golosina;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.divPadrevideo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.itemVideo1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color4;
+    width: 80%;
+    padding: $paddinggral;
+    margin: $margingral;
+    border: $color2 solid 5px;
+    border-radius: $borderadio*2;
+}
+.itemVideo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color4;
+    width: 80%;
+    padding: $paddinggral;
+    margin: $margingral;
+    border: $color2 solid 5px;
+    border-radius: $borderadio*2;
+}
+.pNov{
+    text-decoration: underline;
+    font-family: $fuente;
+    font-size: x-large;
+    font-style: oblique;
+    margin: 5px;
+}
+.videoNov{
+    width: 90%;
+    height: 35vw;
+    margin: $margingral;
+}
+@keyframes golosina {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.divPadrecomprafalsa{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.compraFalsa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color4;
+    width: 60%;
+    height: 80%;
+    margin: $margingral*2;
+    padding: $paddinggral;
+    border: $borde2;
+    border-radius: $borderadio*2;
+}
+.btn{
+    width: 30%;
+}
+
+@media only screen and (max-width: 1200px){
+    .pNov{
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .pComprafalsa{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .h2Nov{
+        font-size: 2.1vw;
+    }
+    .h3Nov{
+        font-size: 2.1vw;
+    }
+    .pNov{
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 682px){
+    .itemNov1{
+        border: $borde2;
+    }
+    .itemNov2{
+        border: $borde2;
+    }
+    .itemNov3{
+        border: $borde2;
+    }
+    .itemNov4{
+        border: $borde2;
+    }
+    .itemVideo1{
+        border: $borde2;
+    }
+    .itemVideo2{
+        border: $borde2;
+    }
+    .h2Nov{
+        text-align: center;
+        font-size: 2.5vw;
+        margin-top: $margingral;
+        padding: 0.5vw;
+    }
+    .h3Nov{
+        font-size: 2.5vw;
+    }
+    .compraFalsa{
+        width: 80%;
+    }
+    .h4Comprafalsa{
+        font-size: 3vw;
+    }
+    .pComprafalsa{
+        font-size: 2.7vw;
+    }
+}
+
+@media only screen and (max-width: 545px){
+    .itemNov1{
+        height: 70vw;
+        margin-bottom: $margingral*5;
+    }
+    .itemNov2{
+        height: 70vw;
+        margin-bottom: $margingral*5;
+    }
+    .itemNov3{
+        height: 70vw;
+        margin-bottom: $margingral*5;
+    }
+    .itemNov4{
+        height: 70vw;
+        margin-bottom: $margingral*5;
+    }
+    .pNov{
+        text-align: center;
+        font-size: 2.5vw;
+    }
+    .h4Comprafalsa{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .h2Nov{
+        font-size: 3vw;
+    }
+    .h3Nov{
+        font-size: 3vw;
+        margin-top: 1vw;
+    }
+    .pNov{
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 410px){
+    .itemNov1{
+        height: 80vw;
+    }
+    .itemNov2{
+        height: 80vw;
+    }
+    .itemNov3{
+        height: 80vw;
+    }
+    .itemNov4{
+        height: 80vw;
+    }
+    .pNov{
+        text-align: center;
+        font-size: 2.5vw;
+    }
+    .btn-Compra{
+        font-size: small;
+    }
+}

@@ -1,0 +1,66 @@
+.nav-brand{
+    display: flex;
+    align-items: center;
+    font-family: $fuenteNav;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-item{
+    border: $bordenegro;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: $borderadio/2;
+    color: black;
+    background-color: $color2;
+    padding: 3px;
+    font-family: $fuente;
+    :hover{
+        color: $color5
+    }
+}
+.dropdown-menu{
+    background-color: $color4;
+    :hover{
+        background-color: $color3;
+    }
+}
+.logo{
+    height: 3.5cm;
+    width: 3.5cm;
+    border: black solid $bordegral+0.5;
+    border-radius: $borderadio;
+}
+nav{
+    background-image: linear-gradient(to right, $color1, $color2, $color3, $color4);
+    p{
+        margin-left: 5px;
+    }
+}
+header{
+    margin-bottom: 30px;
+    border-bottom: $color5 dashed $bordegral+1;
+}
+
+@media only screen and (max-width: 682px){
+    .logo{
+        border: solid 2px;
+    }
+}
+
+@media only screen and (max-width: 545px){
+    .logo{
+        height: 15vw;
+        width: 15vw;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .nav-link{
+        font-size: x-small;
+    }
+    .dropdown-item{
+        font-size: x-small;
+    }
+}

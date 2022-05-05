@@ -1,0 +1,222 @@
+.divPadretabla{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.divTabla{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: $paddinggral;
+}
+table{
+    display: flex;
+    justify-content: center;
+    font-family: $fuente;
+    background-color: $color4;
+    margin: $margingral*3;
+    padding: 10px;
+    border: $bordeTable;
+    border-radius: $borderadio;
+}
+.tabla{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-collapse: collapse;
+}
+td{
+    border: $bordenegro;
+    padding: $paddinggral;
+}
+th{
+    border: $bordenegro;
+    padding: $paddinggral;
+}
+.thTamaño{
+    width: 10vw;
+    padding: 0% 1% 0% 1%;
+}
+.divPadretop1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.divTop1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $fuente;
+    background-color: $color4;
+    width: 40%;
+    margin: $margingral*2;
+    padding: $paddinggral;
+    border: $color1 solid 4px;
+    border-radius: $borderadio+25;
+}
+.divPalitos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgPalitos{
+    width: 70%;
+    height: 70%;
+    background-color: $color4;
+    margin-top: $margingral*2;
+    transition: height 2s, width 2s;
+    border: $borde2;
+    border-radius: $borderadio*7;
+    :hover{
+        height: 90%;
+        width: 90%;
+    }
+}
+.divPadreexplicacion{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.h3Rank{
+    font-size: x-large;
+    margin-bottom: $margingral*2;
+}
+.divExplicacion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $fuente;
+    background-color: $color3;
+    width: 65%;
+    margin: $margingral;
+    padding: $paddinggral*2;
+    border: $color3 solid 4px;
+    border-radius: $borderadio;
+}
+.divPexplicacion{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5vw;
+}
+.divPadrecanvas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.divCanvas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 9vw;
+    background-color: $color3;
+    margin: $margingral;
+    border: $borde2;
+    border-radius: $borderadio*2;
+}
+.h5Canvas{
+    margin-top: $margingral;
+}
+.botonCompra{
+    width: 20%;
+    height: 10%;
+    margin: $margingral;
+}
+
+@media only screen and (max-width: 1200px){
+    .tabla{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .tabla{
+        font-size: x-small;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .botonCanva{
+        font-size: small;
+        padding: 0.5vw;
+        margin-bottom: $margingral;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .tabla{
+        font-size: xx-small;
+    }
+    .h3Rank{
+        font-size: medium;
+    }
+    .divPexplicacion{
+        font-size:small;
+    }
+    .botonCanva{
+        font-size: x-small;
+    }
+    .h5Canvas{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 682px){
+    .divTabla{
+        height: 50vw;
+    }
+    .tabla{
+        overflow: scroll;
+        padding: 0%;
+        font-size: 1.2vw;
+        border: $borde1;
+    }
+    td{
+        border: black solid 1px;
+    }
+    th{
+        border: black solid 1px;
+    }
+    .divTop1{
+        border: $color1 solid 2px;
+    }
+    .h3Selva{
+        font-size: small;
+    }
+    .divExplicacion{
+        width: 80%;
+        border: $color2 solid 2px;
+    }
+    .h3Rank{
+        font-size: small;
+    }
+    .divPexplicacion{
+        font-size: x-small;
+    }
+    .divCanvas{
+        width: 80%;
+        height: 12vw;
+        border: $color2 solid 2px;
+    }
+    .botonCanva{
+        font-size: xx-small;
+    }
+}
+
+@media only screen and (max-width: 410px){
+    .divTop1{
+        width: 70%;
+    }
+    .divExplicacion{
+        width: 95%;
+        padding: 10px;
+    }
+    .divCanvas{
+        height: 15vw;
+    }
+    .h5Canvas{
+        font-size: x-small;
+    }
+}

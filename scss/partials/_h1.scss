@@ -1,0 +1,28 @@
+.divTitulo{
+    display: flex;
+    justify-content: center;
+}
+.divH1{
+    display: flex;
+    justify-content: center;
+    background-color: $color3;
+    width: 90%;
+    margin: 2%;
+    border-radius: 7px;
+    border: $bordeH1;
+    align-items: baseline;
+}
+h1{
+    font-family: $fuente;
+    display: flex;
+    justify-content: center;
+    font-size: 8vw;
+    font-weight: bolder;
+    margin: 15px;
+}
+
+@media only screen and (max-width: 682px){
+    .divH1{
+        border: $color2 solid 2px;
+    }
+}
