@@ -1,3 +1,5 @@
+/* Formulario */
+
 .formularioContacto{
     display: flex;
     justify-content: center;
@@ -19,6 +21,8 @@
     width: 8.5%;
     margin-left: $margingral;
 }
+
+/* Div final */
 .divPadrefinal{
     display: flex;
     justify-content: center;
@@ -36,6 +40,8 @@
     border: $borde1;
     border-radius: $borderadio;
 }
+
+/* Medias queries */
 
 @media only screen and (max-width: 450px){
     .formulario{

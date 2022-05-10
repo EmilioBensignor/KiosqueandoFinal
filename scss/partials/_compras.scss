@@ -1,3 +1,4 @@
+/* Main */
 .listaCompras{
     display: flex;
     justify-content: center;
@@ -15,6 +16,7 @@
     border: $borde1;
     border-radius: $borderadio;
 }
+/* Items de la compra */
 .tituloCarta{
     margin: $margingral;
 }
@@ -57,6 +59,8 @@
     width: 40%;
     font-size: 1vw;
 }
+
+/* Medias queries */
 
 @media only screen and (max-width: 900px){
     .cartaCompra{

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Nav */
 .nav-brand {
   display: flex;
   align-items: center;
@@ -17,12 +18,12 @@
   background-color: #b65c02;
   padding: 3px;
   font-family: "Montserrat"; }
-  .nav-item :hover {
+  .nav-item:hover {
     color: #4b3400; }
 
 .dropdown-menu {
   background-color: #ffc548; }
-  .dropdown-menu :hover {
+  .dropdown-menu:hover {
     background-color: #ff9800; }
 
 .logo {
@@ -40,6 +41,7 @@ header {
   margin-bottom: 30px;
   border-bottom: #4b3400 dashed 4px; }
 
+/* Medias queries */
 @media only screen and (max-width: 682px) {
   .logo {
     border: solid 2px; } }
@@ -77,10 +79,12 @@ h1 {
   font-weight: bolder;
   margin: 15px; }
 
+/* Medias queries */
 @media only screen and (max-width: 682px) {
   .divH1 {
     border: #b65c02 solid 2px; } }
 
+/* Carrusel */
 .carusel {
   display: flex;
   justify-content: center;
@@ -93,6 +97,7 @@ h1 {
 .banner {
   border-radius: 20px; }
 
+/* Main */
 .sectionIndex {
   display: flex;
   flex-direction: row;
@@ -122,6 +127,7 @@ h1 {
   flex-direction: column;
   margin: 1%; }
 
+/* Items dentro de los Divs */
 .psandias {
   display: flex;
   align-items: flex-start;
@@ -155,6 +161,7 @@ h2 {
   margin: 1%;
   padding: 1%; }
 
+/* Medias queries */
 @media only screen and (max-width: 1000px) {
   .sandias {
     width: 40vw; }
@@ -209,6 +216,7 @@ h2 {
     font-size: 1.7vw;
     width: 17vw; } }
 
+/* Asides de las distintas páginas */
 .aside {
   display: flex;
   justify-content: center;
@@ -243,6 +251,7 @@ h2 {
   border: #712300 solid 5px;
   border-radius: 10px; }
 
+/* Medias queries */
 @media only screen and (max-width: 682px) {
   .fender {
     border: #712300 solid 4px; }
@@ -264,7 +273,7 @@ footer {
   width: 50px;
   font-size: 30px;
   padding: 20px; }
-  .fa :hover {
+  .fa:hover {
     opacity: 0.7; }
 
 .fa-facebook {
@@ -292,6 +301,7 @@ footer {
   margin-left: 20px;
   color: black; }
 
+/* Medias queries */
 @media only screen and (max-width: 545px) {
   .redesSociales {
     flex-wrap: nowrap; }
@@ -302,6 +312,7 @@ footer {
   .fa {
     padding: 5vw; } }
 
+/* Tabla */
 .divPadretabla {
   display: flex;
   justify-content: center;
@@ -341,6 +352,7 @@ th {
   width: 10vw;
   padding: 0% 1% 0% 1%; }
 
+/* Top 1 */
 .divPadretop1 {
   display: flex;
   justify-content: center;
@@ -371,10 +383,11 @@ th {
   transition: height 2s, width 2s;
   border: #b65c02 solid 3px;
   border-radius: 70px; }
-  .imgPalitos :hover {
+  .imgPalitos:hover {
     height: 90%;
     width: 90%; }
 
+/* Explicación */
 .divPadreexplicacion {
   display: flex;
   justify-content: center;
@@ -401,6 +414,7 @@ th {
   flex-direction: column;
   line-height: 1.5vw; }
 
+/* Ver más */
 .divPadrecanvas {
   display: flex;
   justify-content: center;
@@ -426,6 +440,7 @@ th {
   height: 10%;
   margin: 1%; }
 
+/* Medias queries */
 @media only screen and (max-width: 1200px) {
   .tabla {
     font-size: small; } }
@@ -494,6 +509,7 @@ th {
   .h5Canvas {
     font-size: x-small; } }
 
+/* Main */
 .listaCompras {
   display: flex;
   justify-content: center;
@@ -511,6 +527,7 @@ th {
   border: #712300 solid 3px;
   border-radius: 10px; }
 
+/* Items de la compra */
 .tituloCarta {
   margin: 1%; }
 
@@ -553,6 +570,7 @@ th {
   width: 40%;
   font-size: 1vw; }
 
+/* Medias queries */
 @media only screen and (max-width: 900px) {
   .cartaCompra {
     width: 40%; }
@@ -585,6 +603,7 @@ th {
   .añadirCarrito {
     font-size: 3vw; } }
 
+/* Grid */
 .divNovedades {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -592,6 +611,7 @@ th {
   justify-items: center;
   margin: 1%; }
 
+/* Próximamente */
 .itemNov1 {
   grid-area: nov1;
   display: flex;
@@ -648,6 +668,7 @@ th {
   border: #b65c02 solid 5px;
   border-radius: 20px; }
 
+/* Items dentro de cada Nov */
 .h2Nov {
   font-family: "Montserrat";
   font: bold;
@@ -670,6 +691,7 @@ th {
   animation-duration: 5s;
   animation-iteration-count: infinite; }
 
+/* Videos */
 .divPadrevideo {
   display: flex;
   justify-content: center;
@@ -709,12 +731,14 @@ th {
   height: 35vw;
   margin: 1%; }
 
+/* Animación */
 @keyframes golosina {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
 
+/* Compra falsa */
 .divPadrecomprafalsa {
   display: flex;
   justify-content: center;
@@ -735,6 +759,7 @@ th {
 .btn {
   width: 30%; }
 
+/* Medias queries */
 @media only screen and (max-width: 1200px) {
   .pNov {
     font-size: large; } }
@@ -821,6 +846,7 @@ th {
   .btn-Compra {
     font-size: small; } }
 
+/* Formulario */
 .formularioContacto {
   display: flex;
   justify-content: center;
@@ -842,6 +868,7 @@ th {
   width: 8.5%;
   margin-left: 1%; }
 
+/* Div final */
 .divPadrefinal {
   display: flex;
   justify-content: center;
@@ -859,6 +886,7 @@ th {
   border: #712300 solid 3px;
   border-radius: 10px; }
 
+/* Medias queries */
 @media only screen and (max-width: 450px) {
   .formulario {
     font-size: small; }

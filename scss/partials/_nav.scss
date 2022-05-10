@@ -1,3 +1,4 @@
+/* Nav */
 .nav-brand{
     display: flex;
     align-items: center;
@@ -16,13 +17,13 @@
     background-color: $color2;
     padding: 3px;
     font-family: $fuente;
-    :hover{
+    &:hover{
         color: $color5
     }
 }
 .dropdown-menu{
     background-color: $color4;
-    :hover{
+    &:hover{
         background-color: $color3;
     }
 }
@@ -42,6 +43,8 @@ header{
     margin-bottom: 30px;
     border-bottom: $color5 dashed $bordegral+1;
 }
+
+/* Medias queries */
 
 @media only screen and (max-width: 682px){
     .logo{

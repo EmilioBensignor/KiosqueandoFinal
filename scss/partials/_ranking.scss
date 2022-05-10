@@ -1,3 +1,4 @@
+/* Tabla */
 .divPadretabla{
     display: flex;
     justify-content: center;
@@ -37,6 +38,8 @@ th{
     width: 10vw;
     padding: 0% 1% 0% 1%;
 }
+
+/* Top 1 */
 .divPadretop1{
     display: flex;
     justify-content: center;
@@ -67,11 +70,13 @@ th{
     transition: height 2s, width 2s;
     border: $borde2;
     border-radius: $borderadio*7;
-    :hover{
+    &:hover{
         height: 90%;
         width: 90%;
     }
 }
+
+/* Explicación */
 .divPadreexplicacion{
     display: flex;
     justify-content: center;
@@ -98,6 +103,8 @@ th{
     flex-direction: column;
     line-height: 1.5vw;
 }
+
+/* Ver más */
 .divPadrecanvas{
     display: flex;
     justify-content: center;
@@ -123,6 +130,8 @@ th{
     height: 10%;
     margin: $margingral;
 }
+
+/* Medias queries */
 
 @media only screen and (max-width: 1200px){
     .tabla{

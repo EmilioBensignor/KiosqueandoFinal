@@ -1,3 +1,4 @@
+/* Carrusel */
 .carusel{
     display: flex;
     justify-content: center;
@@ -10,6 +11,7 @@
 .banner{
     border-radius: $borderadio*2;
 }
+/* Main */
 .sectionIndex{
     display: flex;
     flex-direction: row;
@@ -39,6 +41,7 @@
     flex-direction: column;
     margin: $margingral;
 }
+/* Items dentro de los Divs */
 .psandias{
     display: flex;
     align-items: flex-start;
@@ -72,6 +75,8 @@ h2{
     margin: $margingral;
     padding: $paddinggral;
 }
+
+/* Medias queries */
 
 @media only screen and (max-width: 1000px){
     .sandias{

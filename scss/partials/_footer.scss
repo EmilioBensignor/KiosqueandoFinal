@@ -13,7 +13,7 @@ footer{
     width: 50px;
     font-size: 30px;
     padding: 20px;
-    :hover{
+    &:hover{
         opacity: 0.7;
     }
 }
@@ -42,6 +42,8 @@ footer{
     margin-left: 20px;
     color: black;
 }
+
+/* Medias queries */
 
 @media only screen and (max-width: 545px){
     .redesSociales{
