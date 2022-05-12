@@ -1,4 +1,33 @@
 @charset "UTF-8";
+.itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffc548;
+  opacity: 0.93;
+  width: 70%;
+  height: 85%;
+  padding: 1%;
+  border: #b65c02 solid 5px;
+  border-radius: 20px; }
+
+.itemsVideo, .itemVideo1, .itemVideo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffc548;
+  width: 80%;
+  padding: 1%;
+  margin: 1%;
+  border: #b65c02 solid 5px;
+  border-radius: 20px; }
+
+.divsIndex, .div1, .div3 {
+  display: flex;
+  flex-direction: column;
+  margin: 1%; }
+
 /* Nav */
 .nav-brand {
   display: flex;
@@ -22,9 +51,9 @@
     color: #4b3400; }
 
 .dropdown-menu {
-  background-color: #ffc548; }
-  .dropdown-menu:hover {
-    background-color: #ff9800; }
+  background-color: #ff9800; }
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #ffc548; }
 
 .logo {
   height: 3.5cm;
@@ -64,17 +93,17 @@ header {
 .divH1 {
   display: flex;
   justify-content: center;
+  align-items: baseline;
   background-color: #ff9800;
   width: 90%;
   margin: 2%;
   border-radius: 7px;
-  border: #b65c02 solid 4px;
-  align-items: baseline; }
+  border: #b65c02 solid 4px; }
 
 h1 {
-  font-family: "Montserrat";
   display: flex;
   justify-content: center;
+  font-family: "Montserrat";
   font-size: 8vw;
   font-weight: bolder;
   margin: 15px; }
@@ -107,11 +136,6 @@ h1 {
   border: #b65c02 solid 5px;
   border-radius: 10px; }
 
-.div1 {
-  display: flex;
-  flex-direction: column;
-  margin: 1%; }
-
 .div2 {
   display: flex;
   justify-content: center;
@@ -122,15 +146,10 @@ h1 {
   border: #b65c02 solid 3px;
   border-radius: 10px; }
 
-.div3 {
-  display: flex;
-  flex-direction: column;
-  margin: 1%; }
-
 /* Items dentro de los Divs */
 .psandias {
   display: flex;
-  align-items: flex-start;
+  justify-content: flex-start;
   margin: 1%;
   padding: 1%;
   font-family: "Montserrat"; }
@@ -372,6 +391,7 @@ th {
 
 .divPalitos {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center; }
 
@@ -411,6 +431,7 @@ th {
 
 .divPexplicacion {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   line-height: 1.5vw; }
 
@@ -485,7 +506,7 @@ th {
   .h3Selva {
     font-size: small; }
   .divExplicacion {
-    width: 80%;
+    width: 140%;
     border: #b65c02 solid 2px; }
   .h3Rank {
     font-size: small; }
@@ -603,6 +624,35 @@ th {
   .añadirCarrito {
     font-size: 3vw; } }
 
+.itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffc548;
+  opacity: 0.93;
+  width: 70%;
+  height: 85%;
+  padding: 1%;
+  border: #b65c02 solid 5px;
+  border-radius: 20px; }
+
+.itemsVideo, .itemVideo1, .itemVideo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffc548;
+  width: 80%;
+  padding: 1%;
+  margin: 1%;
+  border: #b65c02 solid 5px;
+  border-radius: 20px; }
+
+.divsIndex, .div1, .div3 {
+  display: flex;
+  flex-direction: column;
+  margin: 1%; }
+
 /* Grid */
 .divNovedades {
   display: grid;
@@ -613,60 +663,16 @@ th {
 
 /* Próximamente */
 .itemNov1 {
-  grid-area: nov1;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffc548;
-  opacity: 0.93;
-  width: 70%;
-  height: 85%;
-  padding: 1%;
-  border: #b65c02 solid 5px;
-  border-radius: 20px; }
+  grid-area: nov1; }
 
 .itemNov2 {
-  grid-area: nov2;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffc548;
-  opacity: 0.93;
-  width: 70%;
-  height: 85%;
-  padding: 1%;
-  border: #b65c02 solid 5px;
-  border-radius: 20px; }
+  grid-area: nov2; }
 
 .itemNov3 {
-  grid-area: nov3;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffc548;
-  opacity: 0.93;
-  width: 70%;
-  height: 85%;
-  padding: 1%;
-  border: #b65c02 solid 5px;
-  border-radius: 20px; }
+  grid-area: nov3; }
 
 .itemNov4 {
-  grid-area: nov4;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffc548;
-  opacity: 0.93;
-  width: 70%;
-  height: 85%;
-  padding: 1%;
-  border: #b65c02 solid 5px;
-  border-radius: 20px; }
+  grid-area: nov4; }
 
 /* Items dentro de cada Nov */
 .h2Nov {
@@ -697,28 +703,6 @@ th {
   justify-content: center;
   width: 100%; }
 
-.itemVideo1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffc548;
-  width: 80%;
-  padding: 1%;
-  margin: 1%;
-  border: #b65c02 solid 5px;
-  border-radius: 20px; }
-
-.itemVideo2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffc548;
-  width: 80%;
-  padding: 1%;
-  margin: 1%;
-  border: #b65c02 solid 5px;
-  border-radius: 20px; }
-
 .pNov {
   text-decoration: underline;
   font-family: "Montserrat";
@@ -727,7 +711,7 @@ th {
   margin: 5px; }
 
 .videoNov {
-  width: 90%;
+  width: 80%;
   height: 35vw;
   margin: 1%; }
 

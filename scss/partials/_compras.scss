@@ -1,16 +1,11 @@
 /* Main */
 .listaCompras{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include wrap;
 }
 .cartaCompra{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
+    @include sb-align;
     background-color: $color3;
-    width: 25%;
+    width: $width4*2.5;
     margin: $margingral;
     overflow: hidden;
     border: $borde1;
@@ -21,9 +16,8 @@
     margin: $margingral;
 }
 .divFoto{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    @include centrar;
+    width: $width;
 }
 .fotoCompra{
     margin: $margingral;
@@ -31,21 +25,19 @@
 }
 .descripcionCompra{
     background-color: $color4;
-    width: 90%;
+    width: $width2+20;
     margin: $margingral;
     padding: $paddinggral;
     border: $borde1;
     border-radius: $borderadio;
 }
 .precio{
-    display: flex;
-    justify-content: center;
-    align-content: bottom;
+    @include centrar-bottom;
 }
 .precioCantidadAñadir{
     text-align: center;
     background-color: $color4;
-    width: 90%;
+    width: $width2+20;
     margin: $margingral;
     padding: $paddinggral*2;
     border: $borde1;
@@ -56,7 +48,7 @@
     font-size: 1vw;
 }
 .cantidadGolosina{
-    width: 40%;
+    width: $width3;
     font-size: 1vw;
 }
 
@@ -64,7 +56,7 @@
 
 @media only screen and (max-width: 900px){
     .cartaCompra{
-        width: 40%;
+        width: $width3;
     }
     .cantidadGolosina{
         font-size: 1.5vw;
@@ -88,7 +80,7 @@
 
 @media only screen and (max-width: 545px){
     .cartaCompra{
-        width: 80%;
+        width: $width2+10;
     }
     .fotoCompra{
         height: 30vw;

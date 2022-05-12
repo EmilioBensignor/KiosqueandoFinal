@@ -1,12 +1,10 @@
 /* Nav */
 .nav-brand{
-    display: flex;
-    align-items: center;
+    @include centrar-align;
     font-family: $fuenteNav;
 }
 .navbar-collapse{
-    display: flex;
-    justify-content: flex-end;
+    @include end;
 }
 .nav-item{
     border: $bordenegro;
@@ -22,9 +20,9 @@
     }
 }
 .dropdown-menu{
-    background-color: $color4;
-    &:hover{
-        background-color: $color3;
+    background-color: $color3;
+    .dropdown-item:hover{
+        background-color: $color4;
     }
 }
 .logo{

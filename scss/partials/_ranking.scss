@@ -1,18 +1,17 @@
+@import "../sass2/mixin";
+
 /* Tabla */
 .divPadretabla{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    @include centrar;
+    width: $width;
 }
 .divTabla{
-    display: flex;
-    justify-content: center;
+    @include centrar;
     width: fit-content;
     padding: $paddinggral;
 }
 table{
-    display: flex;
-    justify-content: center;
+    @include centrar;
     font-family: $fuente;
     background-color: $color4;
     margin: $margingral*3;
@@ -21,9 +20,7 @@ table{
     border-radius: $borderadio;
 }
 .tabla{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    @include centrar-tabla;
     border-collapse: collapse;
 }
 td{
@@ -41,81 +38,68 @@ th{
 
 /* Top 1 */
 .divPadretop1{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    @include centrar;
+    width: $width;
 }
 .divTop1{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @include centrar-columna;
     font-family: $fuente;
     background-color: $color4;
-    width: 40%;
+    width: $width3;
     margin: $margingral*2;
     padding: $paddinggral;
     border: $color1 solid 4px;
     border-radius: $borderadio+25;
 }
 .divPalitos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include centrar-columna2;
 }
 .imgPalitos{
-    width: 70%;
-    height: 70%;
+    width: $width2;
+    height: $height2;
     background-color: $color4;
     margin-top: $margingral*2;
     transition: height 2s, width 2s;
     border: $borde2;
     border-radius: $borderadio*7;
     &:hover{
-        height: 90%;
-        width: 90%;
+        height: $height2+20;
+        width: $width2+20;
     }
 }
 
 /* Explicación */
 .divPadreexplicacion{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    @include centrar;
+    width: $width;
 }
 .h3Rank{
     font-size: x-large;
     margin-bottom: $margingral*2;
 }
 .divExplicacion{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @include centrar-columna;
     font-family: $fuente;
     background-color: $color3;
-    width: 65%;
+    width: $width3+25;
     margin: $margingral;
     padding: $paddinggral*2;
     border: $color2 solid 4px;
     border-radius: $borderadio;
 }
 .divPexplicacion{
-    display: flex;
-    flex-direction: column;
+    @include centrar-columna;
     line-height: 1.5vw;
 }
 
 /* Ver más */
 .divPadrecanvas{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    @include centrar;
+    width: $width
 }
 .divCanvas{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
+    @include centrar-columna2;
+    width: $width3+20;
     height: 9vw;
     background-color: $color3;
     margin: $margingral;
@@ -126,8 +110,8 @@ th{
     margin-top: $margingral;
 }
 .botonCompra{
-    width: 20%;
-    height: 10%;
+    width: $width3/2;
+    height: $height3;
     margin: $margingral;
 }
 
@@ -195,7 +179,7 @@ th{
         font-size: small;
     }
     .divExplicacion{
-        width: 80%;
+        width: $width2*2;
         border: $color2 solid 2px;
     }
     .h3Rank{
@@ -205,7 +189,7 @@ th{
         font-size: x-small;
     }
     .divCanvas{
-        width: 80%;
+        width: $width3*2;
         height: 12vw;
         border: $color2 solid 2px;
     }
@@ -216,10 +200,10 @@ th{
 
 @media only screen and (max-width: 410px){
     .divTop1{
-        width: 70%;
+        width: $width2;
     }
     .divExplicacion{
-        width: 95%;
+        width: $width2+25;
         padding: 10px;
     }
     .divCanvas{

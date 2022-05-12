@@ -1,3 +1,6 @@
+@import "../sass2/mixin";
+@import "../sass2/extend";
+
 /* Grid */
 .divNovedades{
     display: grid;
@@ -13,59 +16,19 @@
 /* Próximamente */
 .itemNov1{
     grid-area: nov1;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    background-color: $color4;
-    opacity: 0.93;
-    width: 70%;
-    height: 85%;
-    padding: $paddinggral;
-    border: $color2 solid 5px;
-    border-radius: $borderadio*2;
+    @extend .itemsNov;
 }
 .itemNov2{
     grid-area: nov2;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    background-color: $color4;
-    opacity: 0.93;
-    width: 70%;
-    height: 85%;
-    padding: $paddinggral;
-    border: $color2 solid 5px;
-    border-radius: $borderadio*2;
+    @extend .itemsNov;
 }
 .itemNov3{
     grid-area: nov3;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    background-color: $color4;
-    opacity: 0.93;
-    width: 70%;
-    height: 85%;
-    padding: $paddinggral;
-    border: $color2 solid 5px;
-    border-radius: $borderadio*2;
+    @extend .itemsNov;
 }
 .itemNov4{
     grid-area: nov4;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    background-color: $color4;
-    opacity: 0.93;
-    width: 70%;
-    height: 85%;
-    padding: $paddinggral;
-    border: $color2 solid 5px;
-    border-radius: $borderadio*2;
+    @extend .itemsNov;
 }
 
 /* Items dentro de cada Nov */
@@ -75,18 +38,16 @@
     font-size: 2vw;
 }
 .h3Nov{
-    display: flex;
-    justify-content: center;
+    @include centrar;
     text-decoration: underline wavy;
     font-family: $fuente;
     font-size: 1.5vw;
     margin: 15px;
 }
 .imgNov{
-    display: flex;
-    align-items: center;
-    width: 50%;
-    height: 30%;
+    @include centrar-align;
+    width: $width3+10;
+    height: $height3*3;
     animation-name: golosina;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -94,31 +55,14 @@
 
 /* Videos */
 .divPadrevideo{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    @include centrar;
+    width: $width;
 }
 .itemVideo1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $color4;
-    width: 80%;
-    padding: $paddinggral;
-    margin: $margingral;
-    border: $color2 solid 5px;
-    border-radius: $borderadio*2;
+    @extend .itemsVideo;
 }
 .itemVideo2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $color4;
-    width: 80%;
-    padding: $paddinggral;
-    margin: $margingral;
-    border: $color2 solid 5px;
-    border-radius: $borderadio*2;
+    @extend .itemsVideo;
 }
 .pNov{
     text-decoration: underline;
@@ -128,7 +72,7 @@
     margin: 5px;
 }
 .videoNov{
-    width: 90%;
+    width: $width2+10;
     height: 35vw;
     margin: $margingral;
 }
@@ -145,24 +89,21 @@
 
 /* Compra falsa */
 .divPadrecomprafalsa{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    @include centrar;
+    width: $width;
 }
 .compraFalsa{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include centrar-columna3;
     background-color: $color4;
-    width: 60%;
-    height: 80%;
+    width: $width3+20;
+    height: $height2+10;
     margin: $margingral*2;
     padding: $paddinggral;
     border: $borde2;
     border-radius: $borderadio*2;
 }
 .btn{
-    width: 30%;
+    width: $width4*3;
 }
 
 /* Medias queries */
@@ -220,7 +161,7 @@
         font-size: 2.5vw;
     }
     .compraFalsa{
-        width: 80%;
+        width: $width2+10;
     }
     .h4Comprafalsa{
         font-size: 3vw;

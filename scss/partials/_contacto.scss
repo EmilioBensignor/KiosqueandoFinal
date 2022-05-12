@@ -1,13 +1,12 @@
 /* Formulario */
 
 .formularioContacto{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    @include centrar;
+    width: $width;
 }
 .formulario{
     background-color: $color4;
-    width: 80%;
+    width: $width2+10;
     margin: $margingral;
     padding: $paddinggral*2;
     border: $color1 solid 4px;
@@ -24,16 +23,13 @@
 
 /* Div final */
 .divPadrefinal{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    @include centrar;
+    width: $width;
 }
 .divFinal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centrar3;
     background-color: $color4;
-    width: 80%;
+    width: $width2+10;
     height: 10vw;
     margin: $margingral*2;
     font-weight: bolder;

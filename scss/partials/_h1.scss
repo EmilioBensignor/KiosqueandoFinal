@@ -1,21 +1,17 @@
 .divTitulo{
-    display: flex;
-    justify-content: center;
+    @include centrar;
 }
 .divH1{
-    display: flex;
-    justify-content: center;
+    @include centrar2;
     background-color: $color3;
-    width: 90%;
-    margin: 2%;
+    width: $width2+20;
+    margin: $margingral*2;
     border-radius: 7px;
     border: $bordeH1;
-    align-items: baseline;
 }
 h1{
+    @include centrar;
     font-family: $fuente;
-    display: flex;
-    justify-content: center;
     font-size: 8vw;
     font-weight: bolder;
     margin: 15px;
