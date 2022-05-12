@@ -1,3 +1,6 @@
+@import "../sass2/extend";
+@import "../sass2/mixin";
+
 /* Main */
 .listaCompras{
     @include wrap;

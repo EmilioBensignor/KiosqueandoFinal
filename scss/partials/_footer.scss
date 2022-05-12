@@ -1,3 +1,6 @@
+@import "../sass2/extend";
+@import "../sass2/mixin";
+
 footer{
     @include foot;
     background-image: linear-gradient(to right, $color1, $color2, $color3, $color4);

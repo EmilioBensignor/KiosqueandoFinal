@@ -1,5 +1,10 @@
 @import "../variables/variables";
 
+.divsIndex{
+    display: flex;
+    flex-direction: column;
+    margin: $margingral;
+}
 .itemsNov{
     display: flex;
     justify-content: space-evenly;
@@ -23,9 +28,4 @@
     margin: $margingral;
     border: $color2 solid 5px;
     border-radius: $borderadio*2;
-}
-.divsIndex{
-    display: flex;
-    flex-direction: column;
-    margin: $margingral;
 }
