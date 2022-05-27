@@ -42,6 +42,12 @@
 
 /* Medias queries */
 
+@media only screen and (max-width: 900px){
+    .formulario{
+        border: $borde1;
+    }
+}
+
 @media only screen and (max-width: 450px){
     .formulario{
         font-size: small;

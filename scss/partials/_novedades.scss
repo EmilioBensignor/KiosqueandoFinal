@@ -33,6 +33,7 @@
 
 /* Items dentro de cada Nov */
 .h2Nov{
+    text-align: center;
     font-family: $fuente;
     font: bold;
     font-size: 2vw;
@@ -58,10 +59,7 @@
     @include centrar;
     width: $width;
 }
-.itemVideo1{
-    @extend .itemsVideo;
-}
-.itemVideo2{
+.itemVideo{
     @extend .itemsVideo;
 }
 .pNov{
@@ -133,26 +131,7 @@
 }
 
 @media only screen and (max-width: 682px){
-    .itemNov1{
-        border: $borde2;
-    }
-    .itemNov2{
-        border: $borde2;
-    }
-    .itemNov3{
-        border: $borde2;
-    }
-    .itemNov4{
-        border: $borde2;
-    }
-    .itemVideo1{
-        border: $borde2;
-    }
-    .itemVideo2{
-        border: $borde2;
-    }
     .h2Nov{
-        text-align: center;
         font-size: 2.5vw;
         margin-top: $margingral;
         padding: 0.5vw;

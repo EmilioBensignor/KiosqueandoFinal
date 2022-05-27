@@ -9,10 +9,10 @@
   width: 70%;
   height: 85%;
   padding: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
-.itemsVideo, .itemVideo1, .itemVideo2 {
+.itemsVideo, .itemVideo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
   width: 80%;
   padding: 1%;
   margin: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
@@ -33,10 +33,10 @@
   width: 70%;
   height: 85%;
   padding: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
-.itemsVideo, .itemVideo1, .itemVideo2 {
+.itemsVideo, .itemVideo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +44,7 @@
   width: 80%;
   padding: 1%;
   margin: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
 /* Nav */
@@ -115,10 +115,10 @@ header {
   width: 70%;
   height: 85%;
   padding: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
-.itemsVideo, .itemVideo1, .itemVideo2 {
+.itemsVideo, .itemVideo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +126,7 @@ header {
   width: 80%;
   padding: 1%;
   margin: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
 .divTitulo {
@@ -169,10 +169,10 @@ h1 {
   width: 70%;
   height: 85%;
   padding: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
-.itemsVideo, .itemVideo1, .itemVideo2 {
+.itemsVideo, .itemVideo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,7 +180,7 @@ h1 {
   width: 80%;
   padding: 1%;
   margin: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
 /* Carrusel */
@@ -325,10 +325,10 @@ h2 {
   width: 70%;
   height: 85%;
   padding: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
-.itemsVideo, .itemVideo1, .itemVideo2 {
+.itemsVideo, .itemVideo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,7 +336,7 @@ h2 {
   width: 80%;
   padding: 1%;
   margin: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
 /* Asides de las distintas páginas */
@@ -365,7 +365,7 @@ h2 {
   width: 50%;
   height: 20%;
   margin: 2%;
-  border: #712300 solid 7px;
+  border: #712300 solid 5px;
   border-radius: 20px; }
 
 .netflix {
@@ -377,15 +377,22 @@ h2 {
 /* Medias queries */
 @media only screen and (max-width: 900px) {
   .imgAside {
+    border: #712300 solid 4px; }
+  .fender {
+    border: #712300 solid 4px;
+    width: 50vw; }
+  .netflix {
     border: #712300 solid 4px; } }
 
 @media only screen and (max-width: 682px) {
   .imgAside {
     border: #712300 solid 3px; }
-  .fender {
-    border: #712300 solid 4px; }
   .netflix {
-    border: #712300 solid 4px; } }
+    border: #712300 solid 3px; } }
+
+@media only screen and (max-width: 545px) {
+  .fender {
+    width: 65vw; } }
 
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
   display: flex;
@@ -397,10 +404,10 @@ h2 {
   width: 70%;
   height: 85%;
   padding: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
-.itemsVideo, .itemVideo1, .itemVideo2 {
+.itemsVideo, .itemVideo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -408,7 +415,7 @@ h2 {
   width: 80%;
   padding: 1%;
   margin: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
 footer {
@@ -475,10 +482,10 @@ footer {
   width: 70%;
   height: 85%;
   padding: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
-.itemsVideo, .itemVideo1, .itemVideo2 {
+.itemsVideo, .itemVideo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -486,7 +493,7 @@ footer {
   width: 80%;
   padding: 1%;
   margin: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
 /* Tabla */
@@ -694,10 +701,10 @@ th {
   width: 70%;
   height: 85%;
   padding: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
-.itemsVideo, .itemVideo1, .itemVideo2 {
+.itemsVideo, .itemVideo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -705,7 +712,7 @@ th {
   width: 80%;
   padding: 1%;
   margin: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
 /* Main */
@@ -723,7 +730,7 @@ th {
   width: 25%;
   margin: 1%;
   overflow: hidden;
-  border: #712300 solid 3px;
+  border: #712300 solid 4px;
   border-radius: 10px; }
 
 /* Items de la compra */
@@ -812,10 +819,10 @@ th {
   width: 70%;
   height: 85%;
   padding: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
-.itemsVideo, .itemVideo1, .itemVideo2 {
+.itemsVideo, .itemVideo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -823,7 +830,7 @@ th {
   width: 80%;
   padding: 1%;
   margin: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
 /* Grid */
@@ -849,6 +856,7 @@ th {
 
 /* Items dentro de cada Nov */
 .h2Nov {
+  text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font: bold;
   font-size: 2vw; }
@@ -934,20 +942,7 @@ th {
     font-size: 2vw; } }
 
 @media only screen and (max-width: 682px) {
-  .itemNov1 {
-    border: #b65c02 solid 3px; }
-  .itemNov2 {
-    border: #b65c02 solid 3px; }
-  .itemNov3 {
-    border: #b65c02 solid 3px; }
-  .itemNov4 {
-    border: #b65c02 solid 3px; }
-  .itemVideo1 {
-    border: #b65c02 solid 3px; }
-  .itemVideo2 {
-    border: #b65c02 solid 3px; }
   .h2Nov {
-    text-align: center;
     font-size: 2.5vw;
     margin-top: 1%;
     padding: 0.5vw; }
@@ -1013,10 +1008,10 @@ th {
   width: 70%;
   height: 85%;
   padding: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
-.itemsVideo, .itemVideo1, .itemVideo2 {
+.itemsVideo, .itemVideo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1024,7 +1019,7 @@ th {
   width: 80%;
   padding: 1%;
   margin: 1%;
-  border: #b65c02 solid 5px;
+  border: #b65c02 solid 4px;
   border-radius: 20px; }
 
 /* Formulario */
@@ -1068,6 +1063,10 @@ th {
   border-radius: 10px; }
 
 /* Medias queries */
+@media only screen and (max-width: 900px) {
+  .formulario {
+    border: #712300 solid 3px; } }
+
 @media only screen and (max-width: 450px) {
   .formulario {
     font-size: small; }

@@ -25,13 +25,13 @@
     width: $width3+10;
     height: $height3*2;
     margin: $margingral*2;
-    border: $color1 solid 7px;
+    border: $bordeaside;
     border-radius: $borderadio*2;
 }
 .netflix{
     width: $width3+10;
     margin: $margingral/2;
-    border: $color1 solid 5px;
+    border: $bordeaside;
     border-radius: $borderadio;
 }
 
@@ -39,18 +39,28 @@
 
 @media only screen and (max-width: 900px){
     .imgAside{
-        border: $borderaside2;
+        border: $bordeaside2;
+    }
+    .fender{
+        border: $bordeaside2;
+        width: 50vw;
+    }
+    .netflix{
+        border: $bordeaside2;
     }
 }
 
 @media only screen and (max-width: 682px){
     .imgAside{
-        border: $borderaside3;
-    }
-    .fender{
-        border: $color1 solid 4px;
+        border: $bordeaside3;
     }
     .netflix{
-        border: $color1 solid 4px;
+        border: $bordeaside3;
+    }
+}
+
+@media only screen and (max-width: 545px){
+    .fender{
+        width: 65vw;
     }
 }
