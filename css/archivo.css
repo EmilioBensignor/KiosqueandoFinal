@@ -1,9 +1,4 @@
 @charset "UTF-8";
-.divsIndex, .div1, .div3 {
-  display: flex;
-  flex-direction: column;
-  margin: 1%; }
-
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
   display: flex;
   justify-content: space-evenly;
@@ -27,11 +22,6 @@
   margin: 1%;
   border: #b65c02 solid 5px;
   border-radius: 20px; }
-
-.divsIndex, .div1, .div3 {
-  display: flex;
-  flex-direction: column;
-  margin: 1%; }
 
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
   display: flex;
@@ -75,7 +65,7 @@
   color: black;
   background-color: #b65c02;
   padding: 3px;
-  font-family: "Montserrat"; }
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
   .nav-item:hover {
     color: #4b3400; }
 
@@ -115,11 +105,6 @@ header {
   .dropdown-item {
     font-size: x-small; } }
 
-.divsIndex, .div1, .div3 {
-  display: flex;
-  flex-direction: column;
-  margin: 1%; }
-
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
   display: flex;
   justify-content: space-evenly;
@@ -155,26 +140,24 @@ header {
   background-color: #ff9800;
   width: 90%;
   margin: 2%;
-  border-radius: 7px;
-  border: #b65c02 solid 4px; }
+  border-radius: 10px;
+  border: #712300 solid 5px; }
 
 h1 {
   display: flex;
   justify-content: center;
-  font-family: "Montserrat";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 8vw;
-  font-weight: bolder;
   margin: 15px; }
 
 /* Medias queries */
+@media only screen and (max-width: 900px) {
+  .divH1 {
+    border: #712300 solid 4px; } }
+
 @media only screen and (max-width: 682px) {
   .divH1 {
-    border: #b65c02 solid 2px; } }
-
-.divsIndex, .div1, .div3 {
-  display: flex;
-  flex-direction: column;
-  margin: 1%; }
+    border: #712300 solid 3px; } }
 
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
   display: flex;
@@ -207,7 +190,7 @@ h1 {
   flex-direction: row; }
 
 .fotosBanner {
-  border: #712300 solid 5px;
+  border: #712300 solid 5.5px;
   border-radius: 20px; }
 
 .banner {
@@ -218,17 +201,22 @@ h1 {
   display: flex;
   flex-direction: row;
   width: 95%;
-  background-color: #ffcc50;
+  background-color: #ffc548;
   margin: 2.5%;
   border: #b65c02 solid 5px;
   border-radius: 10px; }
+
+.divsIndex {
+  display: flex;
+  flex-direction: column;
+  margin: 1%; }
 
 .div2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #ffc548;
+  background-color: #ffcc50;
   margin: 1%;
   border: #b65c02 solid 3px;
   border-radius: 10px; }
@@ -239,31 +227,33 @@ h1 {
   justify-content: flex-start;
   margin: 1%;
   padding: 1%;
-  font-family: "Montserrat"; }
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 .carrito {
   display: flex;
   flex-direction: row-reverse;
   align-items: center; }
 
+.divEstrella {
+  display: flex;
+  justify-content: center; }
+
 .estrellasIndex {
-  height: 60%;
-  width: 60%; }
+  width: 25vw; }
 
 .compra {
-  height: 20%;
-  width: 30%; }
+  width: 100%; }
 
 h2 {
   display: flex;
   justify-content: flex-start;
-  font-family: "Montserrat";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font: bold; }
 
 .pmilka {
   display: flex;
   align-items: flex-start;
-  font-family: "Montserrat";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 1%;
   padding: 1%; }
 
@@ -276,7 +266,8 @@ h2 {
 
 @media only screen and (max-width: 900px) {
   .fotosBanner {
-    width: 90%; }
+    width: 90%;
+    border: #712300 solid 4px; }
   .banner {
     width: 100%; }
   .divPadreImgindex {
@@ -284,6 +275,8 @@ h2 {
     display: flex;
     justify-content: center;
     overflow: hidden; }
+  .sectionIndex {
+    border: #b65c02 solid 4px; }
   .carrito {
     font-size: small; } }
 
@@ -296,21 +289,21 @@ h2 {
   .banner {
     width: 100%; }
   .sectionIndex {
-    border: #ff9800 solid 3px; }
+    border: #b65c02 solid 3px; }
   .div2 {
-    border: #ff9800 solid 2px; }
+    border: #b65c02 solid 2px; }
   .sandias {
-    width: 35vw; }
+    width: 40vw; }
   .psandias {
-    font-size: small; }
+    font-size: smaller; }
   .milkaoreo {
-    width: 35vw; }
+    width: 40vw; }
   .pmilka {
-    font-size: small; }
+    font-size: smaller; }
   .carritoImg {
     width: 50%; }
   .compra {
-    font-size: x-small; } }
+    font-size: small; } }
 
 @media only screen and (max-width: 545px) {
   .divPadrep {
@@ -321,11 +314,6 @@ h2 {
   .compra {
     font-size: 1.7vw;
     width: 17vw; } }
-
-.divsIndex, .div1, .div3 {
-  display: flex;
-  flex-direction: column;
-  margin: 1%; }
 
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
   display: flex;
@@ -360,13 +348,13 @@ h2 {
 .imgAside {
   width: 60%;
   height: 2%;
-  border: #b65c02 solid 3px;
+  border: #712300 solid 5px;
   border-radius: 10px; }
 
 .fifa {
   width: 60%;
   height: 3%;
-  border: #b65c02 solid 3px;
+  border: #712300 solid 5px;
   border-radius: 10px; }
 
 .itemAside {
@@ -387,16 +375,17 @@ h2 {
   border-radius: 10px; }
 
 /* Medias queries */
+@media only screen and (max-width: 900px) {
+  .imgAside {
+    border: #712300 solid 4px; } }
+
 @media only screen and (max-width: 682px) {
+  .imgAside {
+    border: #712300 solid 3px; }
   .fender {
     border: #712300 solid 4px; }
   .netflix {
     border: #712300 solid 4px; } }
-
-.divsIndex, .div1, .div3 {
-  display: flex;
-  flex-direction: column;
-  margin: 1%; }
 
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
   display: flex;
@@ -476,11 +465,6 @@ footer {
   .fa {
     padding: 5vw; } }
 
-.divsIndex, .div1, .div3 {
-  display: flex;
-  flex-direction: column;
-  margin: 1%; }
-
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
   display: flex;
   justify-content: space-evenly;
@@ -514,13 +498,14 @@ footer {
 .divTabla {
   display: flex;
   justify-content: center;
-  width: fit-content;
+  width: 95%;
   padding: 1%; }
 
 table {
   display: flex;
   justify-content: center;
-  font-family: "Montserrat";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5vw;
   background-color: #ffc548;
   margin: 3%;
   padding: 10px;
@@ -534,52 +519,22 @@ table {
   border-collapse: collapse; }
 
 td {
-  border: black solid 3px;
+  border: #b65c02 solid 3px;
   padding: 1%; }
 
 th {
-  border: black solid 3px;
+  border: #b65c02 solid 3px;
   padding: 1%; }
 
 .thTamaño {
-  width: 10vw;
+  width: 15vw;
   padding: 0% 1% 0% 1%; }
 
-/* Top 1 */
-.divPadretop1 {
-  display: flex;
-  justify-content: center;
-  width: 100%; }
+.thTamaño2 {
+  width: 10vw; }
 
-.divTop1 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-family: "Montserrat";
-  background-color: #ffc548;
-  width: 40%;
-  margin: 2%;
-  padding: 1%;
-  border: #712300 solid 4px;
-  border-radius: 35px; }
-
-.divPalitos {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center; }
-
-.imgPalitos {
-  width: 70%;
-  height: 70%;
-  background-color: #ffc548;
-  margin-top: 2%;
-  transition: height 2s, width 2s;
-  border: #b65c02 solid 3px;
-  border-radius: 70px; }
-  .imgPalitos:hover {
-    height: 90%;
-    width: 90%; }
+.thTamaño3 {
+  width: 8vw; }
 
 /* Explicación */
 .divPadreexplicacion {
@@ -588,15 +543,15 @@ th {
   width: 100%; }
 
 .h3Rank {
-  font-size: x-large;
+  font-size: 2.5vw;
   margin-bottom: 2%; }
 
 .divExplicacion {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: "Montserrat";
-  background-color: #ff9800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ffc548;
   width: 65%;
   margin: 1%;
   padding: 2%;
@@ -604,10 +559,58 @@ th {
   border-radius: 10px; }
 
 .divPexplicacion {
+  line-height: 1.5vw;
+  font-size: 1.7vw; }
+
+.pTitulo {
+  text-decoration: underline;
+  margin-right: 0.7vw; }
+
+.Ppexplicacion {
+  display: flex;
+  flex-direction: row; }
+
+/* Top 1 y Ver más */
+/* Top 1 */
+.divPadreTyV {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.divTyV {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  line-height: 1.5vw; }
+  align-items: center;
+  background-color: #ffc548;
+  width: 60%;
+  border: #b65c02 solid 4px;
+  border-radius: 20px; }
+
+.divTop1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 50%;
+  margin: 1%;
+  padding: 1%; }
+
+.h3Selva {
+  font-size: 2.3vw; }
+
+.imgPalitos {
+  width: 100%;
+  height: 100%;
+  background-color: #ffcc50;
+  margin-top: 2%;
+  border: #b65c02 solid 3px;
+  border-radius: 70px;
+  transition: height 2s, width 2s; }
+  .imgPalitos:hover {
+    height: 130%;
+    width: 130%; }
 
 /* Ver más */
 .divPadrecanvas {
@@ -622,92 +625,64 @@ th {
   align-items: center;
   width: 60%;
   height: 9vw;
-  background-color: #ff9800;
-  margin: 1%;
-  border: #b65c02 solid 3px;
-  border-radius: 20px; }
-
-.h5Canvas {
-  margin-top: 1%; }
-
-.botonCompra {
-  width: 20%;
-  height: 10%;
   margin: 1%; }
 
+.h5Canvas {
+  font-size: 2.3vw;
+  margin-top: 1%; }
+
+.botonCanva {
+  background: #ff9800;
+  margin: 1%;
+  border: #b65c02 solid 3px; }
+
+.offcanvas {
+  background-color: #ffcc50; }
+
+.opciones {
+  background-color: #ff9800; }
+
 /* Medias queries */
-@media only screen and (max-width: 1200px) {
-  .tabla {
-    font-size: small; } }
-
-@media only screen and (max-width: 1000px) {
-  .tabla {
-    font-size: x-small;
-    font-weight: bold; } }
-
 @media only screen and (max-width: 900px) {
+  table {
+    border: #712300 solid 4px;
+    border: #712300 solid 3px; }
+  td {
+    border: #b65c02 solid 2px; }
+  th {
+    border: #b65c02 solid 2px; }
+  .divExplicacion {
+    border: #b65c02 solid 3px; }
+  .divTyV {
+    border: #b65c02 solid 3px; }
   .botonCanva {
     font-size: small;
     padding: 0.5vw;
-    margin-bottom: 1%; } }
-
-@media only screen and (max-width: 800px) {
-  .tabla {
-    font-size: xx-small; }
-  .h3Rank {
-    font-size: medium; }
-  .divPexplicacion {
-    font-size: small; }
-  .botonCanva {
-    font-size: x-small; }
-  .h5Canvas {
-    font-size: small; } }
+    margin-bottom: 1%;
+    border: #b65c02 solid 2px; } }
 
 @media only screen and (max-width: 682px) {
   .divTabla {
     height: 50vw; }
   .tabla {
     overflow: scroll;
-    padding: 0%;
-    font-size: 1.2vw;
-    border: #712300 solid 3px; }
+    padding: 0%; }
+  table {
+    font-size: 1.8vw; }
   td {
-    border: black solid 1px; }
+    border: #b65c02 solid 1px; }
   th {
-    border: black solid 1px; }
-  .divTop1 {
-    border: #712300 solid 2px; }
-  .h3Selva {
-    font-size: small; }
+    border: #b65c02 solid 1px; }
   .divExplicacion {
-    width: 140%;
-    border: #b65c02 solid 2px; }
-  .h3Rank {
-    font-size: small; }
+    width: 70%; }
   .divPexplicacion {
-    font-size: x-small; }
+    font-size: 1.8vw;
+    line-height: 1vw; }
   .divCanvas {
     width: 80%;
-    height: 12vw;
-    border: #b65c02 solid 2px; }
+    height: 12vw; }
   .botonCanva {
-    font-size: xx-small; } }
-
-@media only screen and (max-width: 410px) {
-  .divTop1 {
-    width: 70%; }
-  .divExplicacion {
-    width: 95%;
-    padding: 10px; }
-  .divCanvas {
-    height: 15vw; }
-  .h5Canvas {
     font-size: x-small; } }
-
-.divsIndex, .div1, .div3 {
-  display: flex;
-  flex-direction: column;
-  margin: 1%; }
 
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
   display: flex;
@@ -827,11 +802,6 @@ th {
   .añadirCarrito {
     font-size: 3vw; } }
 
-.divsIndex, .div1, .div3 {
-  display: flex;
-  flex-direction: column;
-  margin: 1%; }
-
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
   display: flex;
   justify-content: space-evenly;
@@ -879,7 +849,7 @@ th {
 
 /* Items dentro de cada Nov */
 .h2Nov {
-  font-family: "Montserrat";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font: bold;
   font-size: 2vw; }
 
@@ -887,7 +857,7 @@ th {
   display: flex;
   justify-content: center;
   text-decoration: underline wavy;
-  font-family: "Montserrat";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5vw;
   margin: 15px; }
 
@@ -908,7 +878,7 @@ th {
 
 .pNov {
   text-decoration: underline;
-  font-family: "Montserrat";
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: x-large;
   font-style: oblique;
   margin: 5px; }
@@ -1032,11 +1002,6 @@ th {
     font-size: 2.5vw; }
   .btn-Compra {
     font-size: small; } }
-
-.divsIndex, .div1, .div3 {
-  display: flex;
-  flex-direction: column;
-  margin: 1%; }
 
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
   display: flex;

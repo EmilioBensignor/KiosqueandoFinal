@@ -9,13 +9,13 @@
 .imgAside{
     width: $width3+20;
     height: $height3/5;
-    border: $borde2;
+    border: $bordeaside;
     border-radius: $borderadio;
 }
 .fifa{
     width: $width3+20;
     height: 3%;
-    border: $borde2;
+    border: $bordeaside;
     border-radius: $borderadio;
 }
 .itemAside{
@@ -37,7 +37,16 @@
 
 /* Medias queries */
 
+@media only screen and (max-width: 900px){
+    .imgAside{
+        border: $borderaside2;
+    }
+}
+
 @media only screen and (max-width: 682px){
+    .imgAside{
+        border: $borderaside3;
+    }
     .fender{
         border: $color1 solid 4px;
     }

@@ -4,7 +4,7 @@
 /* Nav */
 .nav-brand{
     @include centrar-align;
-    font-family: $fuenteNav;
+    font-family: $fuente;
 }
 .navbar-collapse{
     @include end;

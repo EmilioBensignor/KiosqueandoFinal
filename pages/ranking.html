@@ -13,8 +13,6 @@
     <title>Kiosqueando - Ranking</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Palette+Mosaic&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -67,13 +65,13 @@
             <div class="divTabla">
                 <table class="tabla">
                     <tr>
-                        <th>Golosina</th>
-                        <th class="thTamaño">Sabor</th>
-                        <th class="thTamaño">Textura</th>
+                        <th class="thTamaño">Golosina</th>
+                        <th class="thTamaño3">Sabor</th>
+                        <th class="thTamaño2">Textura</th>
                         <th class="thTamaño">Presentación</th>
-                        <th class="thTamaño">Experiencia general</th>
-                        <th>Momento</th>
-                        <th>Categoría</th>
+                        <th class="thTamaño2">Exp general</th>
+                        <th class="thTamaño">Momento</th>
+                        <th class="thTamaño">Categoría</th>
                     </tr>
                     <tr>
                         <td>Tiburoncitos</td>
@@ -339,16 +337,6 @@
                 </table>
             </div>
         </div>
-        <!-- Top 1 -->
-        <div class="divPadretop1">
-            <div class="divTop1">
-                <div class="divPalitos">
-                    <h3 class="h3Rank">Top 1 del momento</h3>
-                    <h3 class="h3Selva">Palitos de la Selva</h3>
-                    <img class="imgPalitos" src="../Resource/palitosdelaselva.png" alt="palitos">
-                </div>
-            </div>
-        </div>
         <!-- Explicación -->
         <div class="divPadreexplicacion">
             <div class="divExplicacion">
@@ -356,44 +344,63 @@
                     Explicación de la tabla
                 </h3>
                 <div class="divPexplicacion">
-                    <p>Sabor: Que tan rica es la golosina</p>
-                    <p>Textura: Como acompaña al sabor</p>
-                    <p>Presentación: Como se expone</p>
-                    <p>Experiencia general: Un resumen de estos puntajes</p>
-                    <p>Momento: En que situación podrías comer esta golosina</p>
-                    <p>Categoría: ¿A qué otras golosinas se parece?</p>
+                    <div class="Ppexplicacion">
+                        <p class="pTitulo">Sabor:</p><p>Que tan rica es la golosina</p>
+                    </div>
+                    <div class="Ppexplicacion">
+                        <p><p class="pTitulo">Textura:</p>Cómo acompaña al sabor</p>
+                    </div>
+                    <div class="Ppexplicacion">
+                        <p><p class="pTitulo">Presentación:</p>Cómo se expone</p>
+                    </div>
+                    <div class="Ppexplicacion">
+                        <p><p class="pTitulo">Experiencia general:</p>Un resumen de estos puntajes</p>
+                    </div>
+                    <div class="Ppexplicacion">
+                        <p><p class="pTitulo">Momento:</p>En qué situación podrías comer esta golosina</p>
+                    </div>
+                    <div class="Ppexplicacion">
+                        <p><p class="pTitulo">Categoría:</p>¿A qué otras golosinas se parece?</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Más información -->
-        <div class="divPadrecanvas">
-            <div class="divCanvas">
-                <h5 class="h5Canvas">Aquí para más información</h5>
-                <button class="btn btn-warning botonCanva" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample">
-                Ver más
-                </button>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                    aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">¿Cómo viene la experiencia en Kiosqueando?</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div>
-                            Te dejamos a fácil acceso las páginas para que puedas hacer tus compras, ver las últimas novedades o hasta recomendar una golosina que quieras que esté en el stock
+        <!-- Sección Top 1 y Ver más -->
+        <div class="divPadreTyV">
+            <div class="divTyV">
+                <div class="divTop1">
+                    <h3 class="h3Rank">Top 1 del momento</h3>
+                    <h3 class="h3Selva">Palitos de la Selva</h3>
+                    <img class="imgPalitos" src="../Resource/palitosdelaselva.png" alt="palitos">
+                </div>
+                <div class="divCanvas">
+                    <h5 class="h5Canvas">Aquí para más información</h5>
+                    <button class="btn btn-warning botonCanva" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    Ver más
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">¿Cómo viene la experiencia en Kiosqueando?</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                         </div>
-                        <div class="dropdown mt-3">
-                            <button class="btn btn-warning dropdown-toggle opciones" type="button" id="dropdownMenuButton"
-                                data-bs-toggle="dropdown">
-                                Opciones
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="./compras.html">Compras</a></li>
-                                <li><a class="dropdown-item" href="./novedades.html">Novedades</a></li>
-                                <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
-                            </ul>
+                        <div class="offcanvas-body">
+                            <div>
+                                Te dejamos a fácil acceso las páginas para que puedas hacer tus compras, ver las últimas novedades o hasta recomendar una golosina que quieras que esté en el stock
+                            </div>
+                            <div class="dropdown mt-3">
+                                <button class="btn btn-warning dropdown-toggle opciones" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown">
+                                    Opciones
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="./compras.html">Compras</a></li>
+                                    <li><a class="dropdown-item" href="./novedades.html">Novedades</a></li>
+                                    <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

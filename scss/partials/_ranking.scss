@@ -8,12 +8,13 @@
 }
 .divTabla{
     @include centrar;
-    width: fit-content;
+    width: $width2+25;
     padding: $paddinggral;
 }
 table{
     @include centrar;
     font-family: $fuente;
+    font-size: 1.5vw;
     background-color: $color4;
     margin: $margingral*3;
     padding: 10px;
@@ -25,48 +26,22 @@ table{
     border-collapse: collapse;
 }
 td{
-    border: $bordenegro;
+    border: $borde2;
     padding: $paddinggral;
 }
 th{
-    border: $bordenegro;
+    border: $borde2;
     padding: $paddinggral;
 }
 .thTamaño{
-    width: 10vw;
+    width: 15vw;
     padding: 0% 1% 0% 1%;
 }
-
-/* Top 1 */
-.divPadretop1{
-    @include centrar;
-    width: $width;
+.thTamaño2{
+    width: 10vw;
 }
-.divTop1{
-    @include centrar-columna;
-    font-family: $fuente;
-    background-color: $color4;
-    width: $width3;
-    margin: $margingral*2;
-    padding: $paddinggral;
-    border: $color1 solid 4px;
-    border-radius: $borderadio+25;
-}
-.divPalitos{
-    @include centrar-columna2;
-}
-.imgPalitos{
-    width: $width2;
-    height: $height2;
-    background-color: $color4;
-    margin-top: $margingral*2;
-    transition: height 2s, width 2s;
-    border: $borde2;
-    border-radius: $borderadio*7;
-    &:hover{
-        height: $height2+20;
-        width: $width2+20;
-    }
+.thTamaño3{
+    width: 8vw;
 }
 
 /* Explicación */
@@ -75,22 +50,67 @@ th{
     width: $width;
 }
 .h3Rank{
-    font-size: x-large;
+    font-size: 2.5vw;
     margin-bottom: $margingral*2;
 }
 .divExplicacion{
     @include centrar-columna;
     font-family: $fuente;
-    background-color: $color3;
+    background-color: $color4;
     width: $width3+25;
     margin: $margingral;
     padding: $paddinggral*2;
-    border: $color2 solid 4px;
+    border: $borde22;
     border-radius: $borderadio;
 }
 .divPexplicacion{
-    @include centrar-columna;
     line-height: 1.5vw;
+    font-size: 1.7vw;
+}
+.pTitulo{
+    text-decoration: underline;
+    margin-right: 0.7vw;
+}
+.Ppexplicacion{
+    @include fila;
+}
+
+/* Top 1 y Ver más */
+
+/* Top 1 */
+.divPadreTyV{
+    @include centrar;
+    width: $width;
+}
+.divTyV{
+    @include centrar-columna2;
+    background-color: $color4;
+    width: $width3+20;
+    border: $borde22;
+    border-radius: $borderadio2;
+}
+.divTop1{
+    @include centrar-columna2;
+    font-family: $fuente;
+    width: $width3+10;
+    margin: $margingral;
+    padding: $paddinggral;
+}
+.h3Selva{
+    font-size: 2.3vw;
+}
+.imgPalitos{
+    width: $width;
+    height: $height;
+    background-color: $color6;
+    margin-top: $margingral*2;
+    border: $borde2;
+    border-radius: $borderadio*7;
+    transition: height 2s, width 2s;
+    &:hover{
+        height: $height+30;
+        width: $width+30;
+    }
 }
 
 /* Ver más */
@@ -102,58 +122,48 @@ th{
     @include centrar-columna2;
     width: $width3+20;
     height: 9vw;
-    background-color: $color3;
     margin: $margingral;
-    border: $borde2;
-    border-radius: $borderadio*2;
 }
 .h5Canvas{
+    font-size: 2.3vw;
     margin-top: $margingral;
 }
-.botonCompra{
-    width: $width3/2;
-    height: $height3;
+.botonCanva{
+    background: $color3;
     margin: $margingral;
+    border: $borde2;
+}
+.offcanvas{
+    background-color: $color6;
+}
+.opciones{
+    background-color: $color3;
 }
 
 /* Medias queries */
 
-@media only screen and (max-width: 1200px){
-    .tabla{
-        font-size: small;
-    }
-}
-
-@media only screen and (max-width: 1000px){
-    .tabla{
-        font-size: x-small;
-        font-weight: bold;
-    }
-}
-
 @media only screen and (max-width: 900px){
+    table{
+        border: $bordeTable2;
+        border: $color1 solid 3px;
+    }
+    td{
+        border: $color2 solid 2px;
+    }
+    th{
+        border: $color2 solid 2px;
+    }
+    .divExplicacion{
+        border: $borde2;
+    }
+    .divTyV{
+        border: $borde2;
+    }
     .botonCanva{
         font-size: small;
         padding: 0.5vw;
         margin-bottom: $margingral;
-    }
-}
-
-@media only screen and (max-width: 800px){
-    .tabla{
-        font-size: xx-small;
-    }
-    .h3Rank{
-        font-size: medium;
-    }
-    .divPexplicacion{
-        font-size:small;
-    }
-    .botonCanva{
-        font-size: x-small;
-    }
-    .h5Canvas{
-        font-size: small;
+        border: $color2 solid 2px;
     }
 }
 
@@ -164,53 +174,28 @@ th{
     .tabla{
         overflow: scroll;
         padding: 0%;
-        font-size: 1.2vw;
-        border: $borde1;
+    }
+    table{
+        font-size: 1.8vw;
     }
     td{
-        border: black solid 1px;
+        border: $color2 solid 1px;
     }
     th{
-        border: black solid 1px;
-    }
-    .divTop1{
-        border: $color1 solid 2px;
-    }
-    .h3Selva{
-        font-size: small;
+        border: $color2 solid 1px;
     }
     .divExplicacion{
-        width: $width2*2;
-        border: $color2 solid 2px;
-    }
-    .h3Rank{
-        font-size: small;
+        width: $width2;
     }
     .divPexplicacion{
-        font-size: x-small;
+        font-size: 1.8vw;
+        line-height: 1vw;
     }
     .divCanvas{
         width: $width3*2;
         height: 12vw;
-        border: $color2 solid 2px;
     }
     .botonCanva{
-        font-size: xx-small;
-    }
-}
-
-@media only screen and (max-width: 410px){
-    .divTop1{
-        width: $width2;
-    }
-    .divExplicacion{
-        width: $width2+25;
-        padding: 10px;
-    }
-    .divCanvas{
-        height: 15vw;
-    }
-    .h5Canvas{
         font-size: x-small;
     }
 }
