@@ -7,8 +7,8 @@
   background-color: #ffc548;
   opacity: 0.93;
   width: 70%;
-  height: 85%;
-  padding: 1%;
+  height: 95%;
+  padding: 2%;
   border: #b65c02 solid 4px;
   border-radius: 20px; }
 
@@ -31,8 +31,8 @@
   background-color: #ffc548;
   opacity: 0.93;
   width: 70%;
-  height: 85%;
-  padding: 1%;
+  height: 95%;
+  padding: 2%;
   border: #b65c02 solid 4px;
   border-radius: 20px; }
 
@@ -113,8 +113,8 @@ header {
   background-color: #ffc548;
   opacity: 0.93;
   width: 70%;
-  height: 85%;
-  padding: 1%;
+  height: 95%;
+  padding: 2%;
   border: #b65c02 solid 4px;
   border-radius: 20px; }
 
@@ -167,8 +167,8 @@ h1 {
   background-color: #ffc548;
   opacity: 0.93;
   width: 70%;
-  height: 85%;
-  padding: 1%;
+  height: 95%;
+  padding: 2%;
   border: #b65c02 solid 4px;
   border-radius: 20px; }
 
@@ -323,8 +323,8 @@ h2 {
   background-color: #ffc548;
   opacity: 0.93;
   width: 70%;
-  height: 85%;
-  padding: 1%;
+  height: 95%;
+  padding: 2%;
   border: #b65c02 solid 4px;
   border-radius: 20px; }
 
@@ -402,8 +402,8 @@ h2 {
   background-color: #ffc548;
   opacity: 0.93;
   width: 70%;
-  height: 85%;
-  padding: 1%;
+  height: 95%;
+  padding: 2%;
   border: #b65c02 solid 4px;
   border-radius: 20px; }
 
@@ -480,8 +480,8 @@ footer {
   background-color: #ffc548;
   opacity: 0.93;
   width: 70%;
-  height: 85%;
-  padding: 1%;
+  height: 95%;
+  padding: 2%;
   border: #b65c02 solid 4px;
   border-radius: 20px; }
 
@@ -691,6 +691,10 @@ th {
   .botonCanva {
     font-size: x-small; } }
 
+@media only screen and (max-width: 330px) {
+  .botonCanva {
+    font-size: xx-small; } }
+
 .itemsNov, .itemNov1, .itemNov2, .itemNov3, .itemNov4 {
   display: flex;
   justify-content: space-evenly;
@@ -699,8 +703,8 @@ th {
   background-color: #ffc548;
   opacity: 0.93;
   width: 70%;
-  height: 85%;
-  padding: 1%;
+  height: 95%;
+  padding: 2%;
   border: #b65c02 solid 4px;
   border-radius: 20px; }
 
@@ -817,8 +821,8 @@ th {
   background-color: #ffc548;
   opacity: 0.93;
   width: 70%;
-  height: 85%;
-  padding: 1%;
+  height: 95%;
+  padding: 2%;
   border: #b65c02 solid 4px;
   border-radius: 20px; }
 
@@ -957,16 +961,12 @@ th {
 
 @media only screen and (max-width: 545px) {
   .itemNov1 {
-    height: 70vw;
     margin-bottom: 5%; }
   .itemNov2 {
-    height: 70vw;
     margin-bottom: 5%; }
   .itemNov3 {
-    height: 70vw;
     margin-bottom: 5%; }
   .itemNov4 {
-    height: 70vw;
     margin-bottom: 5%; }
   .pNov {
     text-align: center;
@@ -984,14 +984,6 @@ th {
     font-size: 3vw; } }
 
 @media only screen and (max-width: 410px) {
-  .itemNov1 {
-    height: 80vw; }
-  .itemNov2 {
-    height: 80vw; }
-  .itemNov3 {
-    height: 80vw; }
-  .itemNov4 {
-    height: 80vw; }
   .pNov {
     text-align: center;
     font-size: 2.5vw; }
@@ -1006,8 +998,8 @@ th {
   background-color: #ffc548;
   opacity: 0.93;
   width: 70%;
-  height: 85%;
-  padding: 1%;
+  height: 95%;
+  padding: 2%;
   border: #b65c02 solid 4px;
   border-radius: 20px; }
 

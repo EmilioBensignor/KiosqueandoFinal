@@ -28,4 +28,4 @@ _¡Más todas las golosinas que puedas recomendar en la sección de Contacto!_
 
 ## Vista previa
 
-<img src=".Resource/screen.png">
+<img src="./Resource/screen.png">
